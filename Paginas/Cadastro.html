@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>MR.Shoes</title>
+    <script src="../CodigoJs/Cadastro.js"></script>
+    <link rel="stylesheet" href="../CSS/Cadastro.css"/>
+    <link rel="stylesheet" href="../CSS/Menu.css"/>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="left-side-menu">
+                <div class="logo">
+                    <img src="../Imagens/logo (2).png">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../Paginas/Menu.html">Menu</a></li>
+                        <li><a href="../Paginas/Unissex.html">Unissex</a></li>
+                        <li><a href="../Paginas/Men.html">Men</a></li>
+                        <li><a href="../Paginas/Women.html">Women</a></li>
+                        <li><a href="../Paginas/Cadastro.html">Registration</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-side-menu">
+                <a href=""><img src="../Imagens/icon-cart.svg"></a>
+            </div>
+        </div>
+        <div class="line">
+        </div>
+    </header>
+    <form action="#" method="post" name="Cadastro">
+        <section class="secao">
+            <h2 style="text-align: center;">REGISTRATION</h2>
+            <input class="padraoInput" type="text" id="nome" placeholder="Full Name" value=""><br><br>
+            <input class="padraoInput" type="email" id="email" placeholder="Email" value=""><br><br>
+            <input class="padraoInput" type="text" id="endereco" placeholder="Adress" value=""><br><br>
+            <div class="row">
+                <input class="inputDiff" type="text" id="complemento" placeholder="Complement" value=""><br><br>
+                <input class="inputDiff" type="number" id="numero" placeholder="Number" value=""><br><br>
+            </div>
+            <div class="row">
+                <input class="inputDiff2" type="text" id="cidade" placeholder="City" value=""><br><br>
+                <input class="inputDiff2" type="text" id="estado" placeholder="State" value=""><br><br>
+                <input class="inputDiff2" type="number" id="cep" placeholder="CEP" value=""><br><br>
+            </div>
+            <div>
+                <input class="padraoInput" type="password" id="senha" placeholder="Password"value=""><br><br>
+                <input class="padraoInput" type="password" id="confirmacao" placeholder="Password Confirmation" value=""><br><br>
+                </div>
+            <div class="rowButton">
+                <button type="button" onclick="enviar()">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+            <p id="return"></p>
+        </section>
+    </form>
+</body>
+</html>
